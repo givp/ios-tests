@@ -21,6 +21,8 @@
 		53C084491978677300533E7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C0842B1978677300533E7A /* UIKit.framework */; };
 		53C084511978677300533E7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C0844F1978677300533E7A /* InfoPlist.strings */; };
 		53C084531978677300533E7A /* masktestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C084521978677300533E7A /* masktestTests.m */; };
+		53C0845D197867D100533E7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C0845C197867D100533E7A /* QuartzCore.framework */; };
+		53EB8EC8197F290300107222 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EB8EC7197F290300107222 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		53C0844E1978677300533E7A /* masktestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "masktestTests-Info.plist"; sourceTree = "<group>"; };
 		53C084501978677300533E7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53C084521978677300533E7A /* masktestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = masktestTests.m; sourceTree = "<group>"; };
+		53C0845C197867D100533E7A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		53EB8EC6197F290300107222 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		53EB8EC7197F290300107222 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C0845D197867D100533E7A /* QuartzCore.framework in Frameworks */,
 				53C0842A1978677300533E7A /* CoreGraphics.framework in Frameworks */,
 				53C0842C1978677300533E7A /* UIKit.framework in Frameworks */,
 				53C084281978677300533E7A /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		53C084261978677300533E7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53C0845C197867D100533E7A /* QuartzCore.framework */,
 				53C084271978677300533E7A /* Foundation.framework */,
 				53C084291978677300533E7A /* CoreGraphics.framework */,
 				53C0842B1978677300533E7A /* UIKit.framework */,
@@ -119,6 +126,8 @@
 				53C0843D1978677300533E7A /* ViewController.m */,
 				53C0843F1978677300533E7A /* Images.xcassets */,
 				53C0842E1978677300533E7A /* Supporting Files */,
+				53EB8EC6197F290300107222 /* TestView.h */,
+				53EB8EC7197F290300107222 /* TestView.m */,
 			);
 			path = masktest;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EB8EC8197F290300107222 /* TestView.m in Sources */,
 				53C0843E1978677300533E7A /* ViewController.m in Sources */,
 				53C084381978677300533E7A /* AppDelegate.m in Sources */,
 				53C084341978677300533E7A /* main.m in Sources */,
@@ -456,6 +466,7 @@
 				53C084581978677300533E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53C084591978677300533E7A /* Build configuration list for PBXNativeTarget "masktestTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +475,7 @@
 				53C0845B1978677300533E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

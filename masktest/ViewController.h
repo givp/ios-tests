@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "TestView.h"
 
 @interface ViewController : UIViewController
+{
+    TestView* m_testView;
+    NSTimer* m_timer;
+}
+@property (weak, nonatomic) IBOutlet UIView *circ;
+- (IBAction)onGesture:(id)sender;
+
 
 @end
