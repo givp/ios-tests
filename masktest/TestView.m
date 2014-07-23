@@ -20,7 +20,7 @@
         // Determine our start and stop angles for the arc (in radians)
         startAngle = M_PI * 1.5;
         endAngle = startAngle + (M_PI * 2);
-        percent = 78.0;
+        self.percent = 0.0;
     }
     return self;
 }
@@ -28,7 +28,7 @@
 - (void)drawRect:(CGRect)rect
 {
     // Display our percentage as a string
-    NSString* textContent = [NSString stringWithFormat:@"%f", percent];
+    NSString* textContent = [NSString stringWithFormat:@"%f", self.percent];
     
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
     
@@ -36,7 +36,7 @@
     [bezierPath addArcWithCenter:CGPointMake(rect.size.width / 2, rect.size.height / 2)
                           radius:110
                       startAngle:startAngle
-                        endAngle:(endAngle - startAngle) * (percent / 100.0) + startAngle
+                        endAngle:(endAngle - startAngle) * (self.percent / 100.0) + startAngle
                        clockwise:YES];
     
     // Set the display for the path, and stroke it

@@ -20,6 +20,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     m_testView = [[TestView alloc] initWithFrame:self.view.bounds];
+    m_testView.percent = 46.0;
     [self.view addSubview:m_testView];
     
     

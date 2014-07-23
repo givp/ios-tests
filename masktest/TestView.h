@@ -12,7 +12,8 @@
 {
     CGFloat startAngle;
     CGFloat endAngle;
-    double percent;
 }
+
+@property (nonatomic, assign) double percent;
 
 @end
